@@ -2341,7 +2341,7 @@ struct ext_func_tab extcmdlist[] = {
     {   'v',  "autoexplore", "automatic exploration of the dungeon", doautoexplore, AUTOCOMPLETE, NULL },
     {   '@',  "autopickup", "toggle the pickup option on/off", dotogglepickup, IFBURIED, NULL },
     {   'C',  "call", "call (name) something", do_naming_ddocall, IFBURIED, NULL },
-    {   'Z',  "cast", "zap (cast) a spell", docast, IFBURIED, NULL },
+    {   'Y',  "cast", "zap (cast) a spell", docast, IFBURIED, NULL },
     { M('c'), "chat", "talk to someone", dotalk, IFBURIED | AUTOCOMPLETE, NULL },
     {   'c',  "close", "close a door", doclose, 0, NULL },
     { M('C'), "conduct", "list voluntary challenges you have adhered to", doconduct, IFBURIED | AUTOCOMPLETE,
@@ -2506,7 +2506,7 @@ struct ext_func_tab extcmdlist[] = {
               NULL },
     { C('w'), "wizwish", "wish for something", wiz_wish, IFBURIED | AUTOCOMPLETE | WIZMODECMD, NULL },
     {  '\0',  "wmode", "show wall modes", wiz_show_wmodes, IFBURIED | AUTOCOMPLETE | WIZMODECMD, NULL },
-    {   'z',  "zap", "zap a wand", dozap, 0, NULL },
+    {   'y',  "zap", "zap a wand", dozap, 0, NULL },
     {  '\0',  (char *) 0, (char *) 0, donull, 0, (char *) 0 } /* sentinel */
 };
 
